@@ -2,18 +2,18 @@ nome tabella: auto-usate
 
 colonne:
 
-id
-prezzo
-marca
-modello
-immatricolazione
-km
-alimentazione
-cambio
-cilindrata
-potenza
-posti
-colore
-carrozzeria
-trazione
-consumi
+id                  BIGINT
+prezzo              MEDIUMINT
+marca               VARCHAR(50)
+modello             VARCHAR(50)
+immatricolazione    YEAR
+km                  MEDIUMINT
+alimentazione       VARCHAR(50)
+cambio              VARCHAR(50)
+cilindrata          SMALLINT
+potenza             SMALLINT
+posti               TINYINT
+colore              VARCHAR(50)
+carrozzeria         VARCHAR(50)
+trazione            VARCHAR(50)
+consumi             FLOAT(4,2)
