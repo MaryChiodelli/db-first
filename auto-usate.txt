@@ -1,1 +1,19 @@
 nome tabella: auto-usate
+
+colonne:
+
+id
+prezzo
+marca
+modello
+immatricolazione
+km
+alimentazione
+cambio
+cilindrata
+potenza
+posti
+colore
+carrozzeria
+trazione
+consumi
