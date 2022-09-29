@@ -2,18 +2,18 @@ nome tabella: auto-usate
 
 colonne:
 
-id                  BIGINT
-prezzo              MEDIUMINT
-marca               VARCHAR(50)
-modello             VARCHAR(50)
-immatricolazione    YEAR
-km                  MEDIUMINT
-alimentazione       VARCHAR(50)
-cambio              VARCHAR(50)
-cilindrata          SMALLINT
-potenza             SMALLINT
-posti               TINYINT
-colore              VARCHAR(50)
-carrozzeria         VARCHAR(50)
-trazione            VARCHAR(50)
-consumi             FLOAT(4,2)
+id                  BIGINT         PK: AUTO_INCREMENT, UNIQUE, NOT_NULL
+prezzo              MEDIUMINT      NOT_NULL
+marca               VARCHAR(50)    NOT_NULL
+modello             VARCHAR(50)    NOT_NULL
+immatricolazione    YEAR           NOT_NULL
+km                  MEDIUMINT      NOT_NULL
+alimentazione       VARCHAR(50)    NOT_NULL
+cambio              VARCHAR(50)    DEFAULT(manuale)
+cilindrata          SMALLINT       NULLABLE
+potenza             SMALLINT       NULLABLE
+posti               TINYINT        DEFAULT(4)
+colore              VARCHAR(50)    NULLABLE
+carrozzeria         VARCHAR(50)    NULLABLE
+trazione            VARCHAR(50)    DEFAULT(anteriore)
+consumi             FLOAT(4,2)     NULLABLE
